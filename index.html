@@ -53,7 +53,6 @@
         <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>CV</span></a></li>
         <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
         </li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
@@ -64,7 +63,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Tony Petrasinovic</h1>
-      <p>Je suis <span class="typed" data-typed-items="Développeur Web"></span></p>
+      <p>Je suis <span class="typed" data-typed-items="Développeur Full-stack"></span></p>
       <div class="social-links">
         <a href="https://twitter.com/petrasan1z" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="https://www.linkedin.com/in/tony-petrasinovic-b31a76230/" target="_blank" class="linkedin"><i
@@ -90,7 +89,7 @@
             <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>UI/UX Designer &amp; Développeur Web.</h3>
+            <h3>Développeur Full-stack</h3>
             <p class="fst-italic">
               Avec un sens aigu du détail et un engagement envers la qualité, je crée des solutions web centrées sur
               l'utilisateur qui dépassent les attentes.
@@ -133,19 +132,24 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Compétences</h2>
+          <h2>Stacks</h2>
           <p>Explorez mes compétences en développement web front-end et back-end.</p>
         </div>
 
         <div class="row skills-content">
 
-          <div class="d-flex justify-content-center flex-wrap gap-2">
-            <img src="/assets/img/astro-icon-dark.svg" width="150px" alt="astro">
-            <img src="/assets/img/angular.svg" width="150px" alt="angular">
-            <img src="/assets/img/react-2.svg" width="150px" alt="react">
-            <img src="/assets/img/next-js.svg" width="150px" alt="next">
-            <img src="/assets/img/vuejs-icon.svg" width="150px" alt="vue">
-            <img src="/assets/img/prisma-3.svg" width="150px" alt="prisma">
+          <div class="d-flex justify-content-center flex-wrap gap-4">
+            <img src="/assets/img/astro-icon-dark.svg" width="120px" alt="astro">
+            <img src="/assets/img/angular.svg" width="120px" alt="angular">
+            <img src="/assets/img/react-2.svg" width="120px" alt="react">
+            <img src="/assets/img/next-js.svg" width="120px" alt="next">
+            <img src="/assets/img/vuejs-icon.svg" width="120px" alt="vue">
+            <img src="/assets/img/prisma-3.svg" width="120px" alt="prisma">
+            <img src="/assets/img/postgresql.svg" width="120px" alt="postgresql">
+            <img src="/assets/img/php-1.svg" width="120px" alt="php">
+            <img src="/assets/img/bootstrap-4.svg" width="120px" alt="bootstrap">
+            <img src="/assets/img/nodejs-3.svg" width="120px" alt="nodejs">
+
           </div>
         </div>
 
@@ -206,8 +210,6 @@
                 </li>
                 <li>Assurer le suivi des stocks, les réapprovisionnements et les inventaires en garantissant la
                   fiabilité des données.</li>
-                <li>Optimisation de la logistique de commande au sein d'une équipe de 4 personnes, permettant une
-                  réduction de 15% des erreurs de préparation et une augmentation de la satisfaction client.</li>
               </ul>
             </div>
             <div class="resume-item">
@@ -215,11 +217,14 @@
               <h5>2023</h5>
               <p><em>La Poste, Troyes</em></p>
               <ul>
-                <li>Développement du serveur et des bases de données d'une application web performante et sécurisée,
+                <li>Développement du serveur cPanel et des bases de données mySQL d'une application web performante et
+                  sécurisée,
                   garantissant la gestion efficace des données et des processus métiers.</li>
-                <li>Conception et intégration d'une interface utilisateur intuitive et responsive, offrant une
+                <li>Conception et intégration d'une interface utilisateur intuitive et responsive avec Figma et NextJs,
+                  offrant une
                   expérience utilisateur optimale sur tous les supports.</li>
-                <li>Mise en place d'une solution de paiement fiable et conforme aux normes en vigueur, garantissant une
+                <li>Mise en place d'une solution de paiement Stripe, fiable et conforme aux normes en vigueur,
+                  garantissant une
                   expérience d'achat fluide pour les utilisateurs.</li>
               </ul>
             </div>
@@ -437,7 +442,8 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="https://getform.io/f/1cab2d2e-a040-4cb6-a8c0-686b9a1b31e8" method="POST"
+              encType="multipart/form-data" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Votre Nom" required>
@@ -454,7 +460,7 @@
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
-                <div class="error-message"></div>
+                <!-- <div class="error-message"></div> -->
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Envoyer</button></div>

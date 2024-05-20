@@ -36,6 +36,44 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    .carousel {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .carousel__track {
+      display: inline-block;
+      animation: scroll 20s linear infinite;
+    }
+
+    .carousel__track--duplicate {
+      animation-delay: 0s;
+    }
+
+    .carousel__track img {
+      margin: 0 10px;
+    }
+
+    /* .carousel__track img:hover {
+      transform: scale(1.2);
+      transition: transform 0.3s ease-in-out;
+    } */
+    .carousel__track img:hover {
+      filter: brightness(1.2);
+      transition: filter 0.3s ease-in-out;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -86,7 +124,7 @@
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+            <img src="assets/img/photoProfile.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Développeur Full-stack</h3>
@@ -137,8 +175,37 @@
         </div>
 
         <div class="row skills-content">
+          <div class="carousel">
+            <div class="carousel__track">
+              <img src="/assets/img/astro-icon-dark.svg" width="120px" alt="astro" title="Astro" />
+              <img src="/assets/img/angular.svg" width="120px" alt="angular" />
+              <img src="/assets/img/react-2.svg" width="120px" alt="react" />
+              <img src="/assets/img/next-js.svg" width="120px" alt="next">
+              <img src="/assets/img/vuejs-icon.svg" width="120px" alt="vue">
+              <img src="/assets/img/prisma-3.svg" width="120px" alt="prisma">
+              <img src="/assets/img/postgresql.svg" width="120px" alt="postgresql">
+              <img src="/assets/img/php-1.svg" width="120px" alt="php">
+              <img src="/assets/img/bootstrap-4.svg" width="120px" alt="bootstrap">
+              <img src="/assets/img/nodejs-3.svg" width="120px" alt="nodejs">
+              <img src="/assets/img/tailwindcss.svg" width="120px" alt="tailwind">
+            </div>
+            <div class="carousel__track carousel__track--duplicate">
+              <img src="/assets/img/astro-icon-dark.svg" width="120px" alt="astro" />
+              <img src="/assets/img/angular.svg" width="120px" alt="angular" />
+              <img src="/assets/img/react-2.svg" width="120px" alt="react" />
+              <img src="/assets/img/next-js.svg" width="120px" alt="next">
+              <img src="/assets/img/vuejs-icon.svg" width="120px" alt="vue">
+              <img src="/assets/img/prisma-3.svg" width="120px" alt="prisma">
+              <img src="/assets/img/postgresql.svg" width="120px" alt="postgresql">
+              <img src="/assets/img/php-1.svg" width="120px" alt="php">
+              <img src="/assets/img/bootstrap-4.svg" width="120px" alt="bootstrap">
+              <img src="/assets/img/nodejs-3.svg" width="120px" alt="nodejs">
 
-          <div class="d-flex justify-content-center flex-wrap gap-4">
+
+            </div>
+          </div>
+
+          <!-- <div class="d-flex justify-content-center flex-wrap gap-4">
             <img src="/assets/img/astro-icon-dark.svg" width="120px" alt="astro">
             <img src="/assets/img/angular.svg" width="120px" alt="angular">
             <img src="/assets/img/react-2.svg" width="120px" alt="react">
@@ -152,7 +219,7 @@
             <img src="/assets/img/vitejs.svg" width="120px" alt="vitejs">
 
 
-          </div>
+          </div> -->
         </div>
 
 
